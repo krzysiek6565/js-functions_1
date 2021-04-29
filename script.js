@@ -3,7 +3,7 @@ let para = document.createElement('p');
 let first = 0;
 let last = names.length-1;
 
- let chooseName = function(last, first){
+ let chooseName = function(first, last){
   return Math.floor(Math.random() * (last - first) + first);
 }
 para.textContent = names[chooseName(last, first)];

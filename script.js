@@ -4,7 +4,7 @@ let first = 0;
 let last = names.length-1;
 
  let chooseName = function(first, last){
-  return Math.floor(Math.random() * (last - first) + first);
+  return Math.floor(Math.random() * (last - first + 1) + first);
 }
 para.textContent = names[chooseName(first, last)];
 

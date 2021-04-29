@@ -6,7 +6,7 @@ let last = names.length-1;
  let chooseName = function(first, last){
   return Math.floor(Math.random() * (last - first) + first);
 }
-para.textContent = names[chooseName(last, first)];
+para.textContent = names[chooseName(first, last)];
 
 
 const section = document.querySelector('section');
